@@ -1,0 +1,6 @@
+<!-- 业务域名已在微信公众平台配置为 https 后，webview 才能加载 -->
+<web-view wx:if="{{h5Url}}" src="{{h5Url}}"></web-view>
+<view wx:else class="placeholder">
+  <text class="t1">未配置 H5 地址</text>
+  <text class="t2">请在 pages/index/index.js 里设置 h5Url，并部署带 HTTPS 的 Listen to Me 页面。</text>
+</view>

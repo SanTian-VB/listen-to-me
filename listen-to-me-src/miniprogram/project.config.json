@@ -1,0 +1,20 @@
+{
+  "description": "Listen to Me — 嵌套 H5 或后续接后端 TTS",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileHotReLoad": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.5.0",
+  "appid": "",
+  "projectname": "listen-to-me",
+  "condition": {}
+}

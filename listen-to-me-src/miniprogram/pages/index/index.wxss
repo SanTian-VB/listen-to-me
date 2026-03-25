@@ -1,0 +1,18 @@
+.placeholder {
+  padding: 48rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.t1 {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1e1b2e;
+}
+
+.t2 {
+  font-size: 26rpx;
+  color: #64748b;
+  line-height: 1.5;
+}

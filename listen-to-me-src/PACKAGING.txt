@@ -1,0 +1,17 @@
+Listen to Me — 体积说明
+========================
+
+• 仓库里体积最大的是「依赖」：执行过 npm install 后 node_modules 常占约 200～350MB
+  （pdfjs-dist、TypeScript、pdf-parse 等），这是本地开发正常现象。
+
+• 不要把这些打进压缩包发人或上传 Git：
+  - .gitignore 已忽略 node_modules、dist
+  - 对方解压后执行：npm ci 或 npm install
+
+• 仅源码打包（推荐分享/备份）：
+  npm run pack:src
+  会在上级目录生成 listen-to-me-src.zip（也可用环境覆盖路径）
+
+• 线上部署只需「构建结果 + 后端」：
+  npm run build
+  dist/ 体积约数 MB；另需 Node 运行 server/index.mjs（或静态托管 dist + 独立 API）
